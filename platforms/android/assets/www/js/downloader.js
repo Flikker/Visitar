@@ -13,18 +13,19 @@ var fileTransfer = new FileTransfer();
 statusDom = document.querySelector('#status');
 
 fileTransfer.onprogress = function(progressEvent) {
+            
             if (progressEvent.lengthComputable) {
                 document.getElementById("ft-prog").style.display = "block";
         var perc = Math.floor(progressEvent.loaded / progressEvent.total * 100);
-    statusDom.innerHTML = perc + "% downloaded...";
-    document.getElementById("ft-prog").value = perc;
+    statusDom.innerHTML = perc + "% downloaded...<br>PLEASE DO NOT NAVIGATE OFF THIS PAGE";
+    document.getElementById("ft-prog").value = perc; window.plugins.insomnia.keepAwake(); 
                 
            
             } else {
                     if(statusDom.innerHTML == "") {
-                    statusDom.innerHTML = "Downloading";
+                    statusDom.innerHTML = "Downloading <br>PLEASE DO NOT NAVIGATE OFF THIS PAGE"; window.plugins.insomnia.keepAwake(); 
             } else {
-                    statusDom.innerHTML += ".";
+                    statusDom.innerHTML += "."; window.plugins.insomnia.keepAwake(); 
             }
         }
     };
@@ -41,7 +42,7 @@ fileTransfer.onprogress = function(progressEvent) {
      
 function allDone(removey) {
     
-        document.getElementById("ft-prog").style.display = "none"; 
+        document.getElementById("ft-prog").style.display = "none"; window.plugins.insomnia.allowSleepAgain(); 
         alert(itemname + " has downloaded. Go to the Home page to see your downloaded tours"); showDB();
 }
      
