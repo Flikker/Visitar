@@ -13,7 +13,7 @@ var fileTransfer = new FileTransfer();
 statusDom = document.querySelector('#status');
 
 fileTransfer.onprogress = function(progressEvent) {
-            window.plugins.insomnia.keepAwake();
+            
             if (progressEvent.lengthComputable) {
                 document.getElementById("ft-prog").style.display = "block";
         var perc = Math.floor(progressEvent.loaded / progressEvent.total * 100);
@@ -42,7 +42,7 @@ fileTransfer.onprogress = function(progressEvent) {
      
 function allDone(removey) {
     
-        document.getElementById("ft-prog").style.display = "none"; window.plugins.insomnia.allowSleepAgain();
+        document.getElementById("ft-prog").style.display = "none"; 
         alert(itemname + " has downloaded. Go to the Home page to see your downloaded tours"); showDB();
 }
      
