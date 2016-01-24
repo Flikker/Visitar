@@ -23,7 +23,7 @@ fileTransfer.onprogress = function(progressEvent) {
            
             } else {
                     if(statusDom.innerHTML == "") {
-                    statusDom.innerHTML = "Downloading <br>PLEASE DO NOT NAVIGATE OFF THIS PAGE";
+                    statusDom.innerHTML = "Downloading <br>PLEASE DO NOT NAVIGATE OFF THIS PAGE ";
             } else {
                     statusDom.innerHTML += ".";
             }
