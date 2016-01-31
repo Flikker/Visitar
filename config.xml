@@ -23,6 +23,7 @@
     </platform>
     <preference name="AndroidPersistentFileLocation" value="Internal" />
     <preference name="iosPersistentFileLocation" value="Library" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
     <platform name="android">
         <splash density="land-hdpi" src="www/img/splash/splashland1.png" />
         <splash density="land-ldpi" src="www/img/splash/splashland1.png" />
