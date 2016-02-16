@@ -43,6 +43,4 @@
     <preference name="xwalkMultipleApk" value="true" />
     
     
-    <plugin name="cordova-plugin-file-transfer" />
-    
 </widget>
