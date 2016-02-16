@@ -43,10 +43,12 @@
     <preference name="xwalkMultipleApk" value="true" />
     
     
-    <plugin name="cordova-plugin-file-transfer" />
-    <plugin name="cordova-plugin-whitelist" />
-    <plugin name="nl.x-services.plugins.insomnia" />
-    <plugin name="cordova-plugin-file" />
-    <plugin name="cordova-plugin-splashscreen" />
-    <plugin name="cordova-plugin-zip" />
+    <plugin name="cordova-plugin-file" spec="n/a" />
+<plugin name="cordova-plugin-file-transfer" spec="1.5.0" />
+<plugin name="cordova-plugin-splashscreen" spec="3.2.0" />
+<plugin name="cordova-plugin-whitelist" spec="n/a" />
+<plugin name="cordova-plugin-whitelist" spec="1.2.1" />
+<plugin name="cordova-plugin-zip" spec="3.0.0" />
+<plugin name="nl.x-services.plugins.insomnia" spec="4.2.0" />
+
 </widget>
