@@ -1,6 +1,6 @@
 // I've changed to pagebeforecreate as was multiplying results with pagebeforeshow. check if it refreshes list when reopen app
 /* this bit empties the current searchlist so it's not duplicated, then makes an ajax call to search.php for the list of available tours. The href takes people through to detailsPage which is in tourdetails.html, finding the relevant details from the .html?index= . */
-$(document).on('pageinit', '#searchpage', function(){
+$(document).on('pagebeforeshow', '#searchpage', function(){
     $('#listsearch').empty();
     var output = $('#listsearch');
     $.ajax({
@@ -29,7 +29,7 @@ $(document).on('pageinit', '#searchpage', function(){
 
 
 /* the code for detailsPage in tourdetails.html. Takes the id of the tour clicked in the search list which the code above passed into the detailspage html (getUrlVars), then id is passed to display.php to show the details of the correct tour. Problems included using 'index', which is a reserved term - changed to 'id'. Also had problems with correct syntax for get in display.php, and then forgot to re-add ?id= to end of php call. */
-$(document).on('pageinit', '#detailsPage', function(event) {
+$(document).on('pagebeforeshow', '#detailsPage', function(event) {
 	
     	var id = getUrlVars()["id"];
         
