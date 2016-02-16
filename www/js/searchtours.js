@@ -42,7 +42,7 @@ $(document).on('pageinit', '#detailsPage', function(event) {
         timeout: 10000,
         success: function(data, status){
             $.each(data, function(i,item){
-                var place = '<div class="searchimage"><img  src="' +item.picture+ '" alt="image" ><br><div class="picandtext"><h2 align="center">' +item.name+ '</h2><h4 align="center">' +item.address+ '</h4><p>' +item.descrip+ '</p></div><progress max="100" value="0" id="ft-prog" ></progress></div><div id="status" class="blink"></div><input class="buttonClass" id="download" type="button" value="Download ' +item.filesize+ '"  onclick1="' +item.ziploc+ '" onclick2="' +item.id+ '" onclick3="' +item.name+ '" onclick4="' +item.address+ '"   >';
+                var place = 'item.descrip';
                 
                 output.append(place);
                
