@@ -30,12 +30,16 @@
     
 
     <platform name="android">
-        <splash density="hdpi" src="landscape-hdpi.png"   />
-        <splash density="ldpi" src="landscape-ldpi.png" />
-        <splash density="mdpi" src="landscape-mdpi.png"  />
-        <splash density="xhdpi" src="landscape-xhdpi.png"  />
-        <splash density="xxhdpi" src="landscape-xxhdpi.png" />
-        
+        <splash qualifier="land-hdpi" src="landscape-hdpi.png"   />
+        <splash qualifier="land-ldpi" src="landscape-ldpi.png" />
+        <splash qualifier="land-mdpi" src="landscape-mdpi.png"  />
+        <splash qualifier="land-xhdpi" src="landscape-xhdpi.png"  />
+        <splash qualifier="land-xxhdpi" src="landscape-xxhdpi.png" />
+        <splash qualifier="port-hdpi" src="portrait-hdpi.png" />
+        <splash qualifier="port-ldpi" src="portrait-ldpi.png"  />
+        <splash qualifier="port-mdpi" src="portrait-mdpi.png" />
+        <splash qualifier="port-xhdpi" src="portrait-xhdpi.png" />
+        <splash qualifier="port-xxhdpi" src="portrait-xxhdpi.png" />
     </platform>
    
     <platform name="ios">
