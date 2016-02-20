@@ -30,14 +30,16 @@
     
 
     <platform name="android">
-        <splash density="land-hdpi" src="www/img/splash/splashland1.png" qualifier="hdpi"  />
-        <splash density="land-ldpi" src="www/img/splash/splashland1.png" qualifier="ldpi" />
-        <splash density="land-mdpi" src="www/img/splash/splashland1.png" qualifier="mdpi" />
-        <splash density="land-xhdpi" src="www/img/splash/splashland1.png" qualifier="xhdpi" />
-        <splash density="port-hdpi" src="www/img/splash/splashport.png" />
-        <splash density="port-ldpi" src="www/img/splash/splashport.png" qualifier="ldpi" />
-        <splash density="port-mdpi" src="www/img/splash/splashport.png" />
-        <splash density="port-xhdpi" src="www/img/splash/splashport.png" />
+        <splash density="land-hdpi" src="landscape-hdpi.png" qualifier="hdpi"  />
+        <splash density="land-ldpi" src="landscape-ldpi.png" qualifier="ldpi" />
+        <splash density="land-mdpi" src="landscape-mdpi.png" qualifier="mdpi" />
+        <splash density="land-xhdpi" src="landscape-xhdpi.png" qualifier="xhdpi" />
+        <splash density="land-xxhdpi" src="landscape-xxhdpi.png" qualifier="xhdpi" />
+        <splash density="port-hdpi" src="portrait-hdpi.png" />
+        <splash density="port-ldpi" src="portrait-ldpi.png" qualifier="ldpi" />
+        <splash density="port-mdpi" src="portrait-mdpi.png" />
+        <splash density="port-xhdpi" src="portrait-xhdpi.png" />
+        <splash density="port-xxhdpi" src="portrait-xxhdpi.png" />
     </platform>
    
     <platform name="ios">
