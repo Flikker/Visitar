@@ -1,6 +1,6 @@
 function openPanos(dothis) {
     window.plugins.insomnia.keepAwake();
-      window.location=(dothis);
+      window.open=(dothis);
 }
 
 
