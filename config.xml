@@ -85,4 +85,5 @@
     <plugin name="cordova-plugin-file" />
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-zip" />
+     <plugin name="cordova-plugin-inappbrowser" />
 </widget>

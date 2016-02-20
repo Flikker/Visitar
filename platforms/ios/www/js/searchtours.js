@@ -10,7 +10,7 @@ $(document).on('pagebeforeshow', '#searchpage', function(){
         timeout: 20000,
         success: function(data, status){
             $.each(data, function(i,item){
-                var place = '<li> <a href="tourdetails.html?id=' +item.id+  '" ><img src="' +item.picture+ '">' +item.name+ '<br>' +item.address+ '</a></li>';
+                var place = '<li> <a href="www/tourdetails.html?id=' +item.id+  '" ><img src="' +item.picture+ '">' +item.name+ '<br>' +item.address+ '</a></li>';
                 
                 output.append(place);
             });
@@ -42,7 +42,7 @@ $(document).on('pagebeforeshow', '#detailsPage', function(event) {
         timeout: 10000,
         success: function(data, status){
             $.each(data, function(i,item){
-                var place = '<div class="searchimage"><img  src="' +item.picture+ '" alt="image" ><br><h2 align="center">' +item.name+ '</h2><h4 align="center">' +item.address+ '</h4><p>' +item.descrip+ '</p><progress max="100" value="0" id="ft-prog" ></progress></div><div id="status" class="blink"></div><input class="buttonClass" id="download" type="button" value="Download ' +item.filesize+ '"  onclick1="' +item.ziploc+ '" onclick2="' +item.id+ '" onclick3="' +item.name+ '" onclick4="' +item.address+ '"   >';
+                var place = '<div class="searchimage"><img  src="' +item.picture+ '" alt="image" ><br><div class="picandtext"><h2 align="center">' +item.name+ '</h2><h4 align="center">' +item.address+ '</h4><p>' +item.descrip+ '</p></div><progress max="100" value="0" id="ft-prog" ></progress></div><div id="status" class="blink"></div><input class="buttonClass" id="download" type="button" value="Download ' +item.filesize+ '"  onclick1="' +item.ziploc+ '" onclick2="' +item.id+ '" onclick3="' +item.name+ '" onclick4="' +item.address+ '"   >';
                 
                 output.append(place);
                

@@ -53,6 +53,7 @@
 		AE312B826F46468697C9F17A /* ioapi.c in Resources */ = {isa = PBXBuildFile; fileRef = C591B20119C345B5A1702988 /* ioapi.c */; };
 		AA3E1B089F174924882C0788 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C1083B32E045E28BBEB862 /* libz.dylib */; };
 		8759C343F2DB45FD8F833DA2 /* Insomnia.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B457514F4445EBA8B628E /* Insomnia.m */; };
+		8D7BCAAE1265473BB65362E9 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5148E91BA24D899928DB55 /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,8 @@
 		C4C1083B32E045E28BBEB862 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
 		CE1B457514F4445EBA8B628E /* Insomnia.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Insomnia.m"; path = "nl.x-services.plugins.insomnia/Insomnia.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		3328FEAE4D6844DD827F04BA /* Insomnia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Insomnia.h"; path = "nl.x-services.plugins.insomnia/Insomnia.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		2D5148E91BA24D899928DB55 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		919BDE3F7E49438DBFA08E3A /* CDVInAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +276,8 @@
 				070BE2C56DFA472D9710BA35 /* crypt.h */,
 				CE1B457514F4445EBA8B628E /* Insomnia.m */,
 				3328FEAE4D6844DD827F04BA /* Insomnia.h */,
+				2D5148E91BA24D899928DB55 /* CDVInAppBrowser.m */,
+				919BDE3F7E49438DBFA08E3A /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = "Visitar/Plugins";
@@ -470,6 +475,7 @@
 				0BF9C84994114BFDA480F7A8 /* mztools.c in Resources */,
 				AE312B826F46468697C9F17A /* ioapi.c in Resources */,
 				8759C343F2DB45FD8F833DA2 /* Insomnia.m in Sources */,
+				8D7BCAAE1265473BB65362E9 /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
