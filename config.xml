@@ -26,13 +26,16 @@
     <preference name="AndroidPersistentFileLocation" value="Internal" />
     <preference name="iosPersistentFileLocation" value="Library" />
     <preference name="AllowInlineMediaPlayback" value="true" />
+    
+    
+
     <platform name="android">
-        <splash density="land-hdpi" src="www/img/splash/splashland1.png" />
-        <splash density="land-ldpi" src="www/img/splash/splashland1.png" />
-        <splash density="land-mdpi" src="www/img/splash/splashland1.png" />
-        <splash density="land-xhdpi" src="www/img/splash/splashland1.png" />
+        <splash density="land-hdpi" src="www/img/splash/splashland1.png" qualifier="hdpi"  />
+        <splash density="land-ldpi" src="www/img/splash/splashland1.png" qualifier="ldpi" />
+        <splash density="land-mdpi" src="www/img/splash/splashland1.png" qualifier="mdpi" />
+        <splash density="land-xhdpi" src="www/img/splash/splashland1.png" qualifier="xhdpi" />
         <splash density="port-hdpi" src="www/img/splash/splashport.png" />
-        <splash density="port-ldpi" src="www/img/splash/splashport.png" />
+        <splash density="port-ldpi" src="www/img/splash/splashport.png" qualifier="ldpi" />
         <splash density="port-mdpi" src="www/img/splash/splashport.png" />
         <splash density="port-xhdpi" src="www/img/splash/splashport.png" />
     </platform>
@@ -59,7 +62,7 @@
     
     </platform>
     
-     <splash src="splash.png" />
+     
     
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="6800" />
