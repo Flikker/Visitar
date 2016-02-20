@@ -34,7 +34,7 @@
         <splash density="port-mdpi" src="www/img/splash/splashport.png" />
         <splash density="port-xhdpi" src="www/img/splash/splashport.png" />
     </platform>
-    <splash src="splash.png" platform="ios"  />
+    <splash src="splash.png" platform="ios" width="640" height="1136" />
 
     <!-- iPhone 6 -->
     <splash src="splash.png" platform="ios" width="750" height="1334" />
