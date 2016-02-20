@@ -30,16 +30,12 @@
     
 
     <platform name="android">
-        <splash density="land-hdpi" src="landscape-hdpi.png"   />
-        <splash density="land-ldpi" src="landscape-ldpi.png" />
-        <splash density="land-mdpi" src="landscape-mdpi.png"  />
-        <splash density="land-xhdpi" src="landscape-xhdpi.png"  />
-        <splash density="land-xxhdpi" src="landscape-xxhdpi.png" />
-        <splash density="port-hdpi" src="portrait-hdpi.png" />
-        <splash density="port-ldpi" src="portrait-ldpi.png"  />
-        <splash density="port-mdpi" src="portrait-mdpi.png" />
-        <splash density="port-xhdpi" src="portrait-xhdpi.png" />
-        <splash density="port-xxhdpi" src="portrait-xxhdpi.png" />
+        <splash density="hdpi" src="landscape-hdpi.png"   />
+        <splash density="ldpi" src="landscape-ldpi.png" />
+        <splash density="mdpi" src="landscape-mdpi.png"  />
+        <splash density="xhdpi" src="landscape-xhdpi.png"  />
+        <splash density="xxhdpi" src="landscape-xxhdpi.png" />
+        
     </platform>
    
     <platform name="ios">
@@ -68,7 +64,7 @@
     <splash src="splash.png" />
      
     
-    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="6800" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="AutoHideSplashScreen" value="false"/>
