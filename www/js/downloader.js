@@ -43,7 +43,7 @@ fileTransfer.onprogress = function(progressEvent) {
 function allDone(removey) {
     
         document.getElementById("ft-prog").style.display = "none"; window.plugins.insomnia.allowSleepAgain(); 
-        alert(itemname + " has downloaded. Go to the Home page to see your downloaded tours"); showDB();
+        navigator.notification.alert(itemname + " has downloaded. Go to the Home page to see your downloaded tours", showDB(), 'Download successful', 'Okay'); 
 }
      
      

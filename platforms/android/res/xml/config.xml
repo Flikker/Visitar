@@ -27,8 +27,8 @@
     <feature name="Zip">
         <param name="android-package" value="org.apache.cordova.Zip" />
     </feature>
-    <feature name="InAppBrowser">
-        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
     </feature>
     <splash qualifier="land-hdpi" src="landscape-hdpi.png" />
     <splash qualifier="land-ldpi" src="landscape-ldpi.png" />

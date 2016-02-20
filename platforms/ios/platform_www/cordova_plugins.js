@@ -208,12 +208,11 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-        "id": "cordova-plugin-inappbrowser.inappbrowser",
-        "pluginId": "cordova-plugin-inappbrowser",
-        "clobbers": [
-            "cordova.InAppBrowser.open",
-            "window.open"
+        "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+        "id": "cordova-plugin-dialogs.notification",
+        "pluginId": "cordova-plugin-dialogs",
+        "merges": [
+            "navigator.notification"
         ]
     }
 ];
@@ -227,7 +226,7 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.0.0",
     "cordova-plugin-zip": "3.0.0",
     "nl.x-services.plugins.insomnia": "4.0.1",
-    "cordova-plugin-inappbrowser": "1.3.0"
+    "cordova-plugin-dialogs": "1.2.0"
 }
 // BOTTOM OF METADATA
 });

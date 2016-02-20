@@ -53,7 +53,9 @@
 		AE312B826F46468697C9F17A /* ioapi.c in Resources */ = {isa = PBXBuildFile; fileRef = C591B20119C345B5A1702988 /* ioapi.c */; };
 		AA3E1B089F174924882C0788 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C1083B32E045E28BBEB862 /* libz.dylib */; };
 		8759C343F2DB45FD8F833DA2 /* Insomnia.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B457514F4445EBA8B628E /* Insomnia.m */; };
-		8D7BCAAE1265473BB65362E9 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5148E91BA24D899928DB55 /* CDVInAppBrowser.m */; };
+		0C663730F8D24974AF966B73 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E98FC9CD2D84FB4AEBC586F /* CDVNotification.m */; };
+		A16DF52FBD744AD9B61E9231 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD58E194533445B69EFF7CBA /* CDVNotification.bundle */; };
+		9EFF5525EF794E21911BD66C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D4005EA01F4EE494E248BA /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,8 +149,10 @@
 		C4C1083B32E045E28BBEB862 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
 		CE1B457514F4445EBA8B628E /* Insomnia.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Insomnia.m"; path = "nl.x-services.plugins.insomnia/Insomnia.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		3328FEAE4D6844DD827F04BA /* Insomnia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Insomnia.h"; path = "nl.x-services.plugins.insomnia/Insomnia.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		2D5148E91BA24D899928DB55 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		919BDE3F7E49438DBFA08E3A /* CDVInAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		5E98FC9CD2D84FB4AEBC586F /* CDVNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVNotification.m"; path = "cordova-plugin-dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		808FA3E44D1148F091F5AFAB /* CDVNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVNotification.h"; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		AD58E194533445B69EFF7CBA /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; };
+		B8D4005EA01F4EE494E248BA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				AA3E1B089F174924882C0788 /* libz.dylib in Frameworks */,
+				9EFF5525EF794E21911BD66C /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +227,7 @@
 				308D052D1370CCF300D202BF /* icons */,
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* Visitar-Info.plist */,
+				AD58E194533445B69EFF7CBA /* CDVNotification.bundle */,
 			);
 			name = Resources;
 			path = "Visitar/Resources";
@@ -234,6 +240,7 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
 				C4C1083B32E045E28BBEB862 /* libz.dylib */,
+				B8D4005EA01F4EE494E248BA /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,8 +283,8 @@
 				070BE2C56DFA472D9710BA35 /* crypt.h */,
 				CE1B457514F4445EBA8B628E /* Insomnia.m */,
 				3328FEAE4D6844DD827F04BA /* Insomnia.h */,
-				2D5148E91BA24D899928DB55 /* CDVInAppBrowser.m */,
-				919BDE3F7E49438DBFA08E3A /* CDVInAppBrowser.h */,
+				5E98FC9CD2D84FB4AEBC586F /* CDVNotification.m */,
+				808FA3E44D1148F091F5AFAB /* CDVNotification.h */,
 			);
 			name = Plugins;
 			path = "Visitar/Plugins";
@@ -431,6 +438,7 @@
 				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+				A16DF52FBD744AD9B61E9231 /* CDVNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +483,7 @@
 				0BF9C84994114BFDA480F7A8 /* mztools.c in Resources */,
 				AE312B826F46468697C9F17A /* ioapi.c in Resources */,
 				8759C343F2DB45FD8F833DA2 /* Insomnia.m in Sources */,
-				8D7BCAAE1265473BB65362E9 /* CDVInAppBrowser.m in Sources */,
+				0C663730F8D24974AF966B73 /* CDVNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

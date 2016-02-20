@@ -28,7 +28,7 @@
         "nl.x-services.plugins.insomnia": {
             "PACKAGE_NAME": "com.riv.Visitar"
         },
-        "cordova-plugin-inappbrowser": {
+        "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.riv.Visitar"
         }
     },
