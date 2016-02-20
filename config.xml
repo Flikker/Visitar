@@ -17,6 +17,8 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <feature name="http://api.phonegap.com/1.0/network" />
+    <feature name="http://api.phonegap.com/1.0/file" />
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
