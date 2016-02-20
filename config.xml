@@ -34,15 +34,12 @@
         <splash density="port-mdpi" src="www/img/splash/splashport.png" />
         <splash density="port-xhdpi" src="www/img/splash/splashport.png" />
     </platform>
-    <splash src="splash.png" platform="ios" width="640" height="1136" />
-
-    <!-- iPhone 6 -->
-    <splash src="splash.png" platform="ios" width="750" height="1334" />
+    
     <splash src="www/img/splash/splashport.png" platform="ios" width="1242" height="2208" />
     <splash src="www/img/splash/splashland1.png" platform="ios" width="2208" height="1242" />
 
     <!-- iPad -->
-    <splash src="Default-Portrait.png" platform="ios" width="768" height="1024" />
+    <splash src="www/img/splash/splashport.png" platform="ios" width="768" height="1024" />
     <splash src="www/img/splash/splashland1.png" platform="ios" width="1024" height="768" />
     
     
