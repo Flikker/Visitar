@@ -30,13 +30,13 @@
     
 
     <platform name="android">
-        <splash density="land-hdpi" src="landscape-hdpi.png" qualifier="hdpi"  />
-        <splash density="land-ldpi" src="landscape-ldpi.png" qualifier="ldpi" />
-        <splash density="land-mdpi" src="landscape-mdpi.png" qualifier="mdpi" />
-        <splash density="land-xhdpi" src="landscape-xhdpi.png" qualifier="xhdpi" />
-        <splash density="land-xxhdpi" src="landscape-xxhdpi.png" qualifier="xhdpi" />
+        <splash density="land-hdpi" src="landscape-hdpi.png"   />
+        <splash density="land-ldpi" src="landscape-ldpi.png" />
+        <splash density="land-mdpi" src="landscape-mdpi.png"  />
+        <splash density="land-xhdpi" src="landscape-xhdpi.png"  />
+        <splash density="land-xxhdpi" src="landscape-xxhdpi.png" />
         <splash density="port-hdpi" src="portrait-hdpi.png" />
-        <splash density="port-ldpi" src="portrait-ldpi.png" qualifier="ldpi" />
+        <splash density="port-ldpi" src="portrait-ldpi.png"  />
         <splash density="port-mdpi" src="portrait-mdpi.png" />
         <splash density="port-xhdpi" src="portrait-xhdpi.png" />
         <splash density="port-xxhdpi" src="portrait-xxhdpi.png" />
@@ -64,6 +64,8 @@
     
     </platform>
     
+    
+    <splash src="splash.png" />
      
     
     <preference name="SplashScreen" value="screen" />
