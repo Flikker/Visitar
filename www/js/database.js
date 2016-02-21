@@ -210,7 +210,7 @@ window.resolveLocalFileSystemURL(folderEntry, onSuccess, onError);
 // of newLoccy(the location on the UNZIPPED folder), the name, and the id of that particular listview element (dynamically gave each
 // listview element a different id by passing the database unique identifier into the <li id=
 function getRid(x, y, z) {
-    if  navigator.notification.confirm.buttonIndex("Are you sure you want to delete " + y + "?", confirmCallback, "Delete", "Delete it!, Keep it!") == 1 {
+    if (navigator.notification.confirm.buttonIndex("Are you sure you want to delete " + y + "?", confirmCallback, "Delete", "Delete it, Keep it") == 1) {
        
         
         delFolder(x, y, z);
