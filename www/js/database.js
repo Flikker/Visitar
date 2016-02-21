@@ -86,6 +86,9 @@ $('#downloadlist2').listview('refresh');
  
 
 
+ $('#downloadlist2').listview('refresh');
+
+}
 
 
 
@@ -177,7 +180,7 @@ function delFolder(folderEntry, namey, listEntry) {
     
     
     function successy(parent) {
-    alert(parent); alert(listEntry);
+   
      document.getElementById(listEntry).style.display = "none";
     delRecord(listEntry);
 }
