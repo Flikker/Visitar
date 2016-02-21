@@ -123,7 +123,7 @@ function createDB(tx) {
 // Delete a row in the DB from button
 
 function delRecord(rowid) {
-    
+    alert("this is delrecord and rowid is" + rowid);
  var db = window.openDatabase("Database", "1.0", "DEMO", 2000000);
  db.transaction(
  function (tx) {
@@ -180,7 +180,7 @@ function delFolder(folderEntry, namey, listEntry) {
     
     
     function successy(parent) {
-   
+   alert(parent); alert(listEntry);
      document.getElementById(listEntry).style.display = "none";
     delRecord(listEntry);
 }
