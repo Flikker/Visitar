@@ -60,7 +60,7 @@ function allDone(removey) {
             var removey = entry;
             
             zip.unzip(entry.toURL(), newLocy, function(){
-                                           statusDom.innerHTML = "";  allDone();
+                                           statusDom.innerHTML = ""; removethezip(removey); allDone();
                                            }, progressCallback());
             
 
@@ -69,7 +69,7 @@ function allDone(removey) {
 // remove the file
 function removethezip(removey) {
              function success(removey) {
-  alert(entry + " has been removed")
+  alert(entry + " has been removed");
 }
 
 function fail(error) {
