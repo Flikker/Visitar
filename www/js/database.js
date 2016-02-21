@@ -178,7 +178,7 @@ function delFolder(folderEntry, namey, listEntry) {
     
     
     function successy(parent) {
-
+    
      document.getElementById(listEntry).style.display = "none";
     delRecord(listEntry);
 }
