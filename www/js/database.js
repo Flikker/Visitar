@@ -180,7 +180,7 @@ function delFolder(folderEntry, namey, listEntry) {
     
     
     function successy(parent) {
-   alert(parent); alert(listEntry);
+   alert("this is delfolder successy1 and parent " + parent); alert("this is delfolder successy2 and listentry " + listEntry);
      document.getElementById(listEntry).style.display = "none";
     delRecord(listEntry);
 }
@@ -192,10 +192,12 @@ function faily(error) {
     
     
     function onSuccess(fileEntry) {
+         alert("this is onSuccess and fileentry " + fileEntry);
        fileEntry.removeRecursively(successy, faily);
     }
     
     function onError(fileEntry) {
+        alert("this is onerror and fileentry " + fileEntry);
         document.getElementById(listEntry).style.display = "none";
         
     }
