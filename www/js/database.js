@@ -64,6 +64,20 @@ function itDidnt() {
 
 
 function querySuccess(tx, results) {
+    
+    
+  
+    var thistest = 'cdvfile://localhost/persistent/';
+    var restofpath = getPathy(thistest);
+    
+function getPathy(wholepathy) {
+window.resolveLocalFileSystemURL(wholepathy, function(entry) {
+    return entry.toURL();
+});
+}
+    
+    alert("testing for rest of path " + restofpath);
+    
      var len = results.rows.length;
  
 // set output, output2 to blank so values are not appended to previous values
