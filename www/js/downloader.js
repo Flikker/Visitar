@@ -68,7 +68,7 @@ function allDone(removey) {
 
             function onFileSystemSuccess(fileSystem) {
                 
-  alert("file system is " + fileSystem);
+  alert("file system is " + fileSystem.name);
             }
             
             
