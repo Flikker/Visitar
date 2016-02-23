@@ -24,8 +24,9 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <preference name="AndroidPersistentFileLocation" value="Internal" />
-    <preference name="iosPersistentFileLocation" value="Library" />
+
     <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="BackupWebStorage" value="none" />
     
     
 
