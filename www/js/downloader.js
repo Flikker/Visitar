@@ -67,9 +67,9 @@ function allDone(removey) {
 function testyi(newLocy){
     var thistest = 'cdvfile://localhost/persistent/';
 window.resolveLocalFileSystemURL(thistest, function(entry) {
-    alert(entry.fullPath);
-    alert(entry.toURL());
-    alert(entry.file);
+    var hopeitwork = entry.toURL();
+    alert(hopeitwork);
+   
 });
 }
             
@@ -87,7 +87,7 @@ function fail(error) {
 removey.remove(success, fail);
             
 }
-            
+            alert("hopethis works" + hopeitwork);
             // put the data for the tour into the local database - call persistData with 5 arguments - to load pano; to show pic; to display nae; to display address; to allow deletion(newLocy gets foud with resolve local file system and the resulting object gets removerecursively(ie folder and all contents) method used on it
             persistData(newLocy  + '/pano1.html', newLocy  + '/mainpic.jpg', itemnamey, itemaddressy, newLocy); 
         },
