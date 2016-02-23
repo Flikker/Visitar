@@ -61,24 +61,26 @@ function itDidnt() {
  alert("insomnia failed");   
 }
 
+function getPathy(wholepathy) {
+window.resolveLocalFileSystemURL(wholepathy, function(entry) {
+    var hopeitwork = entry.toURL();
+    alert("this is in getpathy " + hopeitwork);
+    return hopeitwork;
+});
+}
 
 
-function querySuccess(tx, results) {
+function querySuccess(hopeitwork, tx, results) {
     
     
   
     var thistest = 'cdvfile://localhost/persistent/';
     var restofpath = getPathy(thistest);
     
-function getPathy(wholepathy) {
-window.resolveLocalFileSystemURL(wholepathy, function(entry) {
-    var hopeitwork = entry.toURL();
-    alert(hopeitwork);
-    return hopeitwork;
-});
-}
+
     
     alert("testing for rest of path " + restofpath);
+     alert("testing hopeit work " + hopeit);
     
      var len = results.rows.length;
  
