@@ -72,7 +72,9 @@ function querySuccess(tx, results) {
     
 function getPathy(wholepathy) {
 window.resolveLocalFileSystemURL(wholepathy, function(entry) {
-    return entry.toURL();
+    var hopeitwork = entry.toURL();
+    alert(hopeitwork);
+    return hopeitwork;
 });
 }
     
