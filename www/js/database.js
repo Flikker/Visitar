@@ -79,8 +79,8 @@ function querySuccess(hopeitwork, tx, results) {
     
 
     
-    alert("testing for rest of path " + restofpath);
-     alert("testing hopeit work " + hopeit);
+    alert("testing for rest of path " + hopeitwork);
+     
     
      var len = results.rows.length;
  
