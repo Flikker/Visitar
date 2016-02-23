@@ -55,8 +55,9 @@ function allDone(removey) {
         function(entry) {
           
             
-            
-            var newLocy = entry.toURL() + "a";
+            var d = new Date();
+            var n = d.getSeconds();
+            var newLocy = entry.toURL() + n;
             var removey = entry;
             
             zip.unzip(entry.toURL(), newLocy, function(){
