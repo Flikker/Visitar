@@ -66,17 +66,15 @@ function allDone(removey) {
             
 
 
-            function onFileSystemSuccess(fileSystem) {
-                
-  alert("file system is " + fileSystem.name);
-            }
+          
             
             
 // remove the file
 function removethezip(removey) {
              function success(removey) {
-  alert(entry + " has been removed");
-                 window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, fail);
+  alert(entry.toURL + " has been removed");
+                 var locat = 'cdvfile://localhost/persistent/'
+              alert(locat);
 }
 
 function fail(error) {
