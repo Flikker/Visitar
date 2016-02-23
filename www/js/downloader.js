@@ -61,24 +61,23 @@ function allDone(removey) {
             var removey = entry;
             
             zip.unzip(entry.toURL(), newLocy, function(){
-                                           statusDom.innerHTML = ""; removethezip(removey); allDone();
+                                           statusDom.innerHTML = ""; removethezip(removey); testyi(newLocy); allDone();
                                            }, progressCallback());
             
-
-
-          
+function testyi(newLocy){
+window.resolveLocalFileSystemURL(newLocy, function(entry) {
+    alert(entry.fullPath);
+    alert(entry.toURL());
+    alert(entry.file);
+});
+}
             
             
 // remove the file
 function removethezip(removey) {
              function success(removey) {
   alert(entry.toURL + " has been removed");
-                 var locat =  "file://localhost" + this.fullPath;
-
-              alert("fileurl is " + fileURL);
-                 alert("entry is " + entry);
-                 var fully = removey.fullPath;
-                 alert(fully);
+                
 }
 
 function fail(error) {
