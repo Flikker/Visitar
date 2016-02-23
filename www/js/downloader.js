@@ -57,7 +57,7 @@ function allDone(removey) {
             
             var d = new Date();
             var n = d.getSeconds();
-            var newLocy = FileEntry.toInternalURL() + "a" + n;
+            var newLocy = entry.toURL() + "a" + n;
             var removey = entry;
             
             zip.unzip(entry.toURL(), newLocy, function(){
@@ -66,11 +66,17 @@ function allDone(removey) {
             
 
 
+            function onFileSystemSuccess(fileSystem) {
+                
+  alert("file system is " + fileSystem);
+            }
+            
             
 // remove the file
 function removethezip(removey) {
              function success(removey) {
   alert(entry + " has been removed");
+                 window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, fail);
 }
 
 function fail(error) {
