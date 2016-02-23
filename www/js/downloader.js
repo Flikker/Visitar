@@ -75,7 +75,10 @@ function removethezip(removey) {
   alert(entry.toURL + " has been removed");
                  var locat =  "file://localhost" + this.fullPath;
 
-              alert(locat);
+              alert("fileurl is " + fileURL);
+                 alert("entry is " + entry);
+                 var fully = removey.fullPath;
+                 alert(fully);
 }
 
 function fail(error) {
