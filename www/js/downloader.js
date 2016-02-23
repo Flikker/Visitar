@@ -73,7 +73,8 @@ function allDone(removey) {
 function removethezip(removey) {
              function success(removey) {
   alert(entry.toURL + " has been removed");
-                 var locat = 'cdvfile://localhost/persistent/'
+                 var locat =  "file://localhost" + this.fullPath;
+
               alert(locat);
 }
 
