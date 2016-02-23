@@ -65,7 +65,8 @@ function allDone(removey) {
                                            }, progressCallback());
             
 function testyi(newLocy){
-window.resolveLocalFileSystemURL(newLocy, function(entry) {
+    var thistest = 'cdvfile://localhost/persistent/';
+window.resolveLocalFileSystemURL(thistest, function(entry) {
     alert(entry.fullPath);
     alert(entry.toURL());
     alert(entry.file);
