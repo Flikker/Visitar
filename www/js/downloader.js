@@ -73,6 +73,8 @@ function removethezip(removey) {
   alert(entry.toURL + " has been removed");
                 alert("entryfullpath " + entry.fullPath);
                  alert("newlocyfullpath " + newLocy.fullPath);
+                 alert"removey " + removey);
+                 
 }
 
 function fail(error) {
