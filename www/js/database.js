@@ -61,8 +61,7 @@ function itDidnt() {
  alert("insomnia failed");   
 }
 
-function getPathy() {
-     var wholepathy = 'cdvfile://localhost/persistent/';
+function getPathy(wholepathy) {
 window.resolveLocalFileSystemURL(wholepathy, function(entry) {
     hopeitwork = entry.toURL();
     alert("this is in getpathy " + hopeitwork);
@@ -71,11 +70,20 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
 }
 
 
-function querySuccess(tx, results) {
+function querySuccess(hopeitwork, tx, results) {
     
     
+<<<<<<< HEAD
     getPathy();
    
+=======
+  
+    var thistest = 'cdvfile://localhost/persistent/';
+    var restofpath = getPathy(thistest);
+    
+
+    
+>>>>>>> parent of 47cd6a4... yet again
     alert("testing for rest of path " + hopeitwork);
      
     
