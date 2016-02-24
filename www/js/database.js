@@ -78,8 +78,7 @@ function querySuccess(hopeitwork, tx, results) {
     var thistest = 'cdvfile://localhost/persistent/';
     var restofpath = getPathy(thistest);
     
-
-    alert("testing for rest of path " + hopeitwork);
+    
      
     
      var len = results.rows.length;

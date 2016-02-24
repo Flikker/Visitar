@@ -21,6 +21,7 @@ fileTransfer.onprogress = function(progressEvent) {
     document.getElementById("ft-prog").value = perc; window.plugins.insomnia.keepAwake(); 
                 
            
+                
             } else {
                     if(statusDom.innerHTML == "") {
                     statusDom.innerHTML = "Downloading <br>PLEASE DO NOT NAVIGATE OFF THIS PAGE"; window.plugins.insomnia.keepAwake(); 
