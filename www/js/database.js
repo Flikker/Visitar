@@ -79,15 +79,9 @@ function querySuccess(hopeitwork, tx, results) {
     var restofpath = getPathy(thistest);
     
     
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
     alert("testing for rest of path " + hopeitwork);
->>>>>>> parent of 47cd6a4... yet again
-=======
-    alert("testing for rest of path " + hopeitwork);
->>>>>>> parent of 47cd6a4... yet again
-     
+
     
      var len = results.rows.length;
  
