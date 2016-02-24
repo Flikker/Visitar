@@ -78,7 +78,7 @@ function querySuccess(tx, results) {
     
   
    
-    var restofpath = getPathy();
+    
     
 
     
