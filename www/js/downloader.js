@@ -72,13 +72,10 @@ function allDone(removey) {
 function removethezip(removey) {
              function success(removey) {
   alert(entry.toURL + " has been removed");
-<<<<<<< HEAD
-                
-                 
-=======
+
                 alert("entryfullpath " + entry.fullPath);
                  alert("newlocyfullpath " + newLocy.fullPath);
->>>>>>> parent of 7ffc123... new alert for removey as well
+
 }
 
 function fail(error) {
