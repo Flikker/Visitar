@@ -61,8 +61,6 @@ function itDidnt() {
  alert("insomnia failed");   
 }
 
-var hopeitwork; 
-
 function getPathy() {
      var wholepathy = 'cdvfile://localhost/persistent/';
 window.resolveLocalFileSystemURL(wholepathy, function(entry) {
