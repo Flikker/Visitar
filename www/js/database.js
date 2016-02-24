@@ -61,7 +61,9 @@ function itDidnt() {
  alert("insomnia failed");   
 }
 
-function getPathy(wholepathy) {
+var hopeitwork;
+function getPathy() {
+    var wholepathy = 'cdvfile://localhost/persistent/';
 window.resolveLocalFileSystemURL(wholepathy, function(entry) {
     hopeitwork = entry.toURL();
     alert("this is in getpathy " + hopeitwork);
@@ -72,11 +74,11 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
 
 function querySuccess(tx, results) {
     
-    
+    getPathy();
 
   
-    var thistest = 'cdvfile://localhost/persistent/';
-    var restofpath = getPathy(thistest);
+    
+    
     
     
 
