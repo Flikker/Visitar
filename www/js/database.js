@@ -70,7 +70,7 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
 }
 
 
-function querySuccess(hopeitwork, tx, results) {
+function querySuccess(tx, results) {
     
     
 
