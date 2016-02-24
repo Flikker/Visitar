@@ -73,7 +73,7 @@ function allDone(removey) {
 function removethezip(removey) {
              function success(removey) {
   alert(entry.toURL + " has been removed");
-                alert("entryfullpath " + entry.fullPath);
+                
                  
 }
 
@@ -85,7 +85,7 @@ removey.remove(success, fail);
 }
             
             // put the data for the tour into the local database - call persistData with 5 arguments - to load pano; to show pic; to display nae; to display address; to allow deletion(newLocy gets foud with resolve local file system and the resulting object gets removerecursively(ie folder and all contents) method used on it
-            persistData(newLocy  + '/pano1.html', newLocy  + '/mainpic.jpg', itemnamey, itemaddressy, newLocy); 
+            persistData(fileNamey  + '/pano1.html', fileNamey  + '/mainpic.jpg', itemnamey, itemaddressy, fileNamey); 
         },
         function(error) {
             
