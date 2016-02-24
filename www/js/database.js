@@ -79,8 +79,6 @@ function querySuccess(hopeitwork, tx, results) {
     var restofpath = getPathy(thistest);
     
 
-    
-
     alert("testing for rest of path " + hopeitwork);
      
     
