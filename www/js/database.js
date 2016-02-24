@@ -73,23 +73,14 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
 function querySuccess(hopeitwork, tx, results) {
     
     
-<<<<<<< HEAD
-<<<<<<< HEAD
-    getPathy();
-   
-=======
-=======
->>>>>>> parent of 47cd6a4... yet again
+
   
     var thistest = 'cdvfile://localhost/persistent/';
     var restofpath = getPathy(thistest);
     
 
     
-<<<<<<< HEAD
->>>>>>> parent of 47cd6a4... yet again
-=======
->>>>>>> parent of 47cd6a4... yet again
+
     alert("testing for rest of path " + hopeitwork);
      
     
