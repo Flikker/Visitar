@@ -143,7 +143,7 @@ function getPathy() {
 } 
 
 
-function middleMan(entry) {
+function middleMan() {
    
     hopeitwork = entry.toURL();
     alert("middleman works" + hopeitwork);
@@ -151,7 +151,7 @@ function middleMan(entry) {
 }
 
 
-function middlefail() {
+function middleFail() {
    
    
     alert("it failed");
