@@ -187,7 +187,7 @@ function dropDatabase(tx) {
 
 
 // Show the DB contents on page load
-getPathy(); 
+showDB(); 
 
 
 
