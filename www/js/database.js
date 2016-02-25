@@ -4,7 +4,7 @@ function getPathy() {
 window.resolveLocalFileSystemURL(wholepathy, function(entry) {
     hopeitwork = entry.toURL();
     alert("this is in getpathy " + hopeitwork);
-    return hopeitwork;
+    return hopeitwork; showDB();
 });
 }
 
@@ -186,7 +186,7 @@ function dropDatabase(tx) {
 
 
 // Show the DB contents on page load
-showDB(); 
+getPathy(); 
 
 
 
