@@ -134,14 +134,13 @@ function createDB(tx) {
 function middleMan(entry) {
    
     hopeitwork = entry.toURL();
-    
-     
-
     alert("middleman works" + hopeitwork);
+    showDB();
 }
 
+
 function getPathy() {
-    var wholepathy = 'cdvfile://localhost/persistent/'; showDB();
+    var wholepathy = 'cdvfile://localhost/persistent/'; 
 window.resolveLocalFileSystemURL(wholepathy, middleMan); 
 } 
 
