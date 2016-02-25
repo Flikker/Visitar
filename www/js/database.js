@@ -134,9 +134,9 @@ function createDB(tx) {
 
 function getPathy() {
     var wholepathy = 'cdvfile://localhost/persistent/';
-window.resolveLocalFileSystemURL(wholepathy, function(entry) {
+
    alert("test alert i getpathy");
-});
+
 }
 
 // Delete a row in the DB from button
