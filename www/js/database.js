@@ -129,9 +129,7 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
 
 
 function showDB(tx) {
-    getPathy();
-    
- var db = window.openDatabase("Database", "1.0", "DEMO", 2000000);
+   var db = window.openDatabase("Database", "1.0", "DEMO", 2000000);
  db.transaction(createDB, errorCB, successCB);
 }
 function createDB(tx) {
