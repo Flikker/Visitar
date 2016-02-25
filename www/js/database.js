@@ -135,8 +135,7 @@ function createDB(tx) {
 
 
 function getPathy() {
-    var wholepathy = 'cdvfile://localhost/persistent/'; 
-window.resolveLocalFileSystemURL(wholepathy, middleMan, middleFail); 
+   middleMan(), middleFail(); 
 } 
 
 function middleMan(entry) {
