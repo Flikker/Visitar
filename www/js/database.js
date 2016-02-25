@@ -61,20 +61,11 @@ function itDidnt() {
 }
 
 
- var hopeitwork;
-function getPathy() {
-    var wholepathy = 'cdvfile://localhost/persistent/';
-window.resolveLocalFileSystemURL(wholepathy, function(entry) {
-    hopeitwork = entry.toURL();
-    alert("this is in getpathy " + hopeitwork);
-    return hopeitwork;
-});
-}
 
 
 
 function querySuccess(tx, results) {
-   getPathy();
+  
     
     alert("testing for rest of path " + hopeitwork);
 

@@ -33,7 +33,19 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready'); showDB;
+        app.receivedEvent('deviceready'); 
+         var hopeitwork;
+function getPathy() {
+    var wholepathy = 'cdvfile://localhost/persistent/';
+window.resolveLocalFileSystemURL(wholepathy, function(entry) {
+    hopeitwork = entry.toURL();
+    alert("this is in getpathy " + hopeitwork);
+    return hopeitwork;
+});
+}
+ getPathy();
+        
+        
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
