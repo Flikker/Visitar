@@ -138,6 +138,7 @@ function createDB(tx) {
 
 
 function getPathy() {
+    alert("this is getpathy here");
    middleMan(); middleFail(); 
 } 
 
