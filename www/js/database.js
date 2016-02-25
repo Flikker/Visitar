@@ -7,6 +7,7 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
     return hopeitwork;
 });
 }
+getPathy();
 
 
 /* this code below takes the new locations of the downloaded, unzipped tour and inserts it into a database, then displays it on page one */
