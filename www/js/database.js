@@ -131,7 +131,7 @@ function createDB(tx) {
  tx.executeSql("SELECT * FROM DEMO", [], querySuccess, errorCB); 
 }
 
-function middleMan {
+function middleMan() {
     alert("middleman works");
 }
 
