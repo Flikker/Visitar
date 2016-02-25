@@ -136,7 +136,7 @@ function createDB(tx) {
 
 function getPathy() {
     var wholepathy = 'cdvfile://localhost/persistent/'; 
-window.resolveLocalFileSystemURL(wholepathy, middleMan); 
+window.resolveLocalFileSystemURL(wholepathy, middleMan, middleFail); 
 } 
 
 function middleMan(entry) {
@@ -144,6 +144,14 @@ function middleMan(entry) {
     hopeitwork = entry.toURL();
     alert("middleman works" + hopeitwork);
     showDB();
+}
+
+
+function middlefail() {
+   
+   
+    alert("it failed");
+    
 }
 
 // Delete a row in the DB from button
