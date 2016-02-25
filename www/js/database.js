@@ -1,3 +1,13 @@
+var hopeitwork;
+function getPathy() {
+    var wholepathy = 'cdvfile://localhost/persistent/';
+window.resolveLocalFileSystemURL(wholepathy, function(entry) {
+    hopeitwork = entry.toURL();
+    alert("this is in getpathy " + hopeitwork);
+    return hopeitwork;
+});
+}
+getPathy();
 
 
 
@@ -176,16 +186,6 @@ function dropDatabase(tx) {
 
 // Show the DB contents on page load
 showDB(); 
-var hopeitwork;
-function getPathy() {
-    var wholepathy = 'cdvfile://localhost/persistent/';
-window.resolveLocalFileSystemURL(wholepathy, function(entry) {
-    hopeitwork = entry.toURL();
-    alert("this is in getpathy " + hopeitwork);
-    return hopeitwork;
-});
-}
-getPathy();
 
 
 
