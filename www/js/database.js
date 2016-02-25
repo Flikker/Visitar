@@ -137,7 +137,7 @@ function getPathy() {
 window.resolveLocalFileSystemURL(wholepathy, function(entry) {
     hopeitwork = entry.toURL();
     alert("this is in getpathy " + hopeitwork);
-     showDB(); alert("this comes after showdb");
+    
 });
 }
 
