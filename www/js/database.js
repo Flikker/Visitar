@@ -10,6 +10,7 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
 
 
 
+
 /* this code below takes the new locations of the downloaded, unzipped tour and inserts it into a database, then displays it on page one */
     
     
@@ -75,7 +76,7 @@ function itDidnt() {
 
 
 function querySuccess(tx, results) {
-  
+    getPathy();
     
     alert("testing for rest of path " + hopeitwork);
 
