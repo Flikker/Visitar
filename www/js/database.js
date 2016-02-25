@@ -65,12 +65,19 @@ function itDidnt() {
 }
 
 
-
+function getPathy() {
+    var wholepathy = 'cdvfile://localhost/persistent/';
+window.resolveLocalFileSystemURL(wholepathy, function(entry) {
+    hopeitwork = entry.toURL();
+    alert("this is in getpathy " + hopeitwork);
+     showDB(); alert("this comes after showdb")
+});
+}
 
 
 function querySuccess(tx, results) {
     
-    
+    getPathy();
     alert("testing for rest of path " + hopeitwork);
 
     
@@ -132,12 +139,7 @@ function createDB(tx) {
 }
 
 
-function getPathy() {
-    var wholepathy = 'cdvfile://localhost/persistent/';
-window.resolveLocalFileSystemURL(wholepathy, function(entry) {
-   alert("test alert i getpathy" + entry);
-});
-}
+
 
 // Delete a row in the DB from button
 
@@ -185,7 +187,7 @@ function dropDatabase(tx) {
 
 
 // Show the DB contents on page load
-getPathy(); 
+showDB(); 
 
 
 
