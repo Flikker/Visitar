@@ -40,16 +40,7 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        inSom();  var hopeitwork;
-function getPathy() {
-    var wholepathy = 'cdvfile://localhost/persistent/';
-window.resolveLocalFileSystemURL(wholepathy, function(entry) {
-    hopeitwork = entry.toURL();
-    alert("this is in getpathy " + hopeitwork);
-    return hopeitwork;
-});
-}
- getPathy();
+        inSom();  
         
     }
 };
