@@ -7,7 +7,7 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
     return hopeitwork;
 });
 }
-getPathy();
+
 
 
 /* this code below takes the new locations of the downloaded, unzipped tour and inserts it into a database, then displays it on page one */
@@ -136,7 +136,7 @@ function showDB(tx) {
  db.transaction(createDB, errorCB, successCB);
 }
 function createDB(tx) {
- tx.executeSql("SELECT * FROM DEMO", [], querySuccess, errorCB);
+ tx.executeSql("SELECT * FROM DEMO", [], querySuccess, errorCB); getPathy();
 }
 
 // Delete a row in the DB from button
