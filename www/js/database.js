@@ -151,7 +151,7 @@ function middlefail() {
 
 
 function getPathy() {
-   middleMan(), middleFail(); 
+   middleMan(); middleFail(); 
 } 
 
 
