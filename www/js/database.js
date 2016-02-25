@@ -66,7 +66,7 @@ function itDidnt() {
 
 function querySuccess(tx, results) {
    
-
+    getPathy();
     alert("testing for rest of path " + hopeitwork);
 
     
