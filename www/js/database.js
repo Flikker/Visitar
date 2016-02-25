@@ -1,12 +1,5 @@
 var hopeitwork;
-function getPathy() {
-    var wholepathy = 'cdvfile://localhost/persistent/';
-window.resolveLocalFileSystemURL(wholepathy, function(entry) {
-    hopeitwork = entry.toURL();
-    alert("this is in getpathy " + hopeitwork);
-    return hopeitwork;
-});
-}
+
 
 
 
@@ -129,15 +122,23 @@ function inSom() {
 }
 // Show DB onload (next two functions)
 
-
-
 function showDB(tx) {
     
    var db = window.openDatabase("Database", "1.0", "DEMO", 2000000);
  db.transaction(createDB, errorCB, successCB);
 }
 function createDB(tx) {
- tx.executeSql("SELECT * FROM DEMO", [], querySuccess, errorCB); getPathy();
+ tx.executeSql("SELECT * FROM DEMO", [], querySuccess, errorCB); 
+}
+
+
+function getPathy() {
+    var wholepathy = 'cdvfile://localhost/persistent/';
+window.resolveLocalFileSystemURL(wholepathy, function(entry) {
+    hopeitwork = entry.toURL();
+    alert("this is in getpathy " + hopeitwork);
+    return hopeitwork; showDB();
+});
 }
 
 // Delete a row in the DB from button
@@ -186,7 +187,7 @@ function dropDatabase(tx) {
 
 
 // Show the DB contents on page load
-showDB(); 
+getPathy(); 
 
 
 
