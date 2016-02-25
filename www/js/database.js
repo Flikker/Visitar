@@ -77,7 +77,7 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
 
 function querySuccess(tx, results) {
     
-    getPathy();
+    
     alert("testing for rest of path " + hopeitwork);
 
     
@@ -187,7 +187,7 @@ function dropDatabase(tx) {
 
 
 // Show the DB contents on page load
-showDB(); 
+getPathy(); 
 
 
 
