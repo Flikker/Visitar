@@ -132,14 +132,17 @@ function createDB(tx) {
 }
 
 
+function middleMan(entry) {
+    
+    hopeitwork = entry.toURL();
+    alert("this is in middleman " + hopeitwork);
+    showDB();
+    
+}
+
 function getPathy() {
     var wholepathy = 'cdvfile://localhost/persistent/';
-window.resolveLocalFileSystemURL(wholepathy, function(entry) {
-    showDB();
-    hopeitwork = entry.toURL();
-    alert("this is in getpathy " + hopeitwork);
-     
-}); 
+window.resolveLocalFileSystemURL(wholepathy, middleMan(entry)); 
 }
 
 // Delete a row in the DB from button
