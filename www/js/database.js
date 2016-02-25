@@ -131,18 +131,20 @@ function createDB(tx) {
  tx.executeSql("SELECT * FROM DEMO", [], querySuccess, errorCB); 
 }
 
+
+
+
+function getPathy() {
+    var wholepathy = 'cdvfile://localhost/persistent/'; 
+window.resolveLocalFileSystemURL(wholepathy, middleMan); 
+} 
+
 function middleMan(entry) {
    
     hopeitwork = entry.toURL();
     alert("middleman works" + hopeitwork);
     showDB();
 }
-
-
-function getPathy() {
-    var wholepathy = 'cdvfile://localhost/persistent/'; 
-window.resolveLocalFileSystemURL(wholepathy, middleMan()); 
-} 
 
 // Delete a row in the DB from button
 
