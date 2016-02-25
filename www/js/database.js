@@ -134,10 +134,6 @@ function createDB(tx) {
 
 
 
-function getPathy() {
-   middleMan(), middleFail(); 
-} 
-
 function middleMan(entry) {
    
     hopeitwork = entry.toURL();
@@ -152,6 +148,13 @@ function middlefail() {
     alert("it failed");
     
 }
+
+
+function getPathy() {
+   middleMan(), middleFail(); 
+} 
+
+
 
 // Delete a row in the DB from button
 
