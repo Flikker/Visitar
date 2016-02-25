@@ -62,20 +62,12 @@ function itDidnt() {
 }
 
 
- var hopeitwork;
-function getPathy() {
-    var wholepathy = 'cdvfile://localhost/persistent/';
-window.resolveLocalFileSystemURL(wholepathy, function(entry) {
-    hopeitwork = entry.toURL();
-    alert("this is in getpathy " + hopeitwork);
-    return hopeitwork;
-});
-}
+ 
 
 
 function querySuccess(tx, results) {
    
-    getPathy();
+    
     alert("testing for rest of path " + hopeitwork);
 
     
@@ -130,7 +122,6 @@ function inSom() {
 
 
 function showDB(tx) {
-    getPathy();
    var db = window.openDatabase("Database", "1.0", "DEMO", 2000000);
  db.transaction(createDB, errorCB, successCB);
 }
@@ -185,6 +176,17 @@ function dropDatabase(tx) {
 
 // Show the DB contents on page load
 showDB(); 
+var hopeitwork;
+function getPathy() {
+    var wholepathy = 'cdvfile://localhost/persistent/';
+window.resolveLocalFileSystemURL(wholepathy, function(entry) {
+    hopeitwork = entry.toURL();
+    alert("this is in getpathy " + hopeitwork);
+    return hopeitwork;
+});
+}
+getPathy();
+
 
 
 
