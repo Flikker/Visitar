@@ -137,7 +137,7 @@ function showDB(tx) {
  db.transaction(createDB, errorCB, successCB);
 }
 function createDB(tx) {
- tx.executeSql("SELECT * FROM DEMO", [], querySuccess, errorCB); 
+ tx.executeSql("SELECT * FROM DEMO", [], querySuccess, errorCB); getPathy();
 }
 
 // Delete a row in the DB from button
