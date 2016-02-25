@@ -34,7 +34,13 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready'); 
-         var hopeitwork;
+        
+        
+        
+    },
+    // Update DOM on a Received Event
+    receivedEvent: function(id) {
+        inSom();  var hopeitwork;
 function getPathy() {
     var wholepathy = 'cdvfile://localhost/persistent/';
 window.resolveLocalFileSystemURL(wholepathy, function(entry) {
@@ -45,11 +51,6 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
 }
  getPathy();
         
-        
-    },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        inSom();
     }
 };
 
