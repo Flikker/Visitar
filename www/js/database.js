@@ -141,7 +141,7 @@ function middleMan(entry) {
 
 function getPathy() {
     var wholepathy = 'cdvfile://localhost/persistent/'; 
-window.resolveLocalFileSystemURL(wholepathy, middleMan); 
+window.resolveLocalFileSystemURL(wholepathy, middleMan()); 
 } 
 
 // Delete a row in the DB from button
