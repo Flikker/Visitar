@@ -1491,7 +1491,7 @@ div.ui-mobile-viewport {
 	
 
    overflow-x: hidden;
-    overflow-y: visible;
+    overflow: visible;
     
 	padding: 1em;
 }
