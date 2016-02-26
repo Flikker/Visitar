@@ -1347,7 +1347,7 @@ div.ui-mobile-viewport {
 .ui-mobile .ui-page-active {
 	display: block;
 	overflow: visible;
-	
+	overflow-x: hidden;
     overflow-y: auto;
 }
 @media screen and (orientation: portrait) {
@@ -1490,7 +1490,8 @@ div.ui-mobile-viewport {
     /* background-color: rgba(26, 26, 102, 0.4); */
 	
     position: absolute;
-  
+   overflow-x: hidden;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     
 	padding: 1em;
