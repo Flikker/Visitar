@@ -1491,7 +1491,8 @@ div.ui-mobile-viewport {
 	
     position: absolute;
    overflow-x: hidden;
-    overflow: visible;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     
 	padding: 1em;
 }
