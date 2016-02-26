@@ -4815,3 +4815,7 @@ width:100%; margin-left:auto; margin-right:auto; border-radius:20px; opacity: 0.
 .explan {
     white-space: normal;
 }
+
+body {
+    -webkit-overflow-scrolling: touch;    
+}
