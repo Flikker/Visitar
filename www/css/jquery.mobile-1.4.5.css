@@ -1489,10 +1489,10 @@ div.ui-mobile-viewport {
 	border-width: 5;
     /* background-color: rgba(26, 26, 102, 0.4); */
 	
-    position:absolute;
+    position: absolute;
    overflow-x: hidden;
     overflow: visible;
-    -webkit-overflow-scrolling: touch;
+    
 	padding: 1em;
 }
 /* Corner styling for dialogs and popups */
