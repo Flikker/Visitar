@@ -1494,7 +1494,7 @@ div.ui-mobile-viewport {
     overflow: visible;
     -webkit-overflow-scrolling: touch;
     
-	padding: -1em;
+	padding: 1em;
 }
 /* Corner styling for dialogs and popups */
 .ui-corner-all > .ui-header:first-child,

@@ -27,6 +27,7 @@
     <preference name="iosPersistentFileLocation" value="Library" />
     <preference name="AllowInlineMediaPlayback" value="true" />
     <preference name="BackupWebStorage" value="none" />
+    <preference name="DisallowOverscroll" value="true" />
     
     
 
