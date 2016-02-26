@@ -223,8 +223,10 @@ function faily(error) {
         document.getElementById(listEntry).style.display = "none";
         
     }
+    
+    var pathFull = hopeitwork + folderEntry;
 
-window.resolveLocalFileSystemURL(folderEntry, onSuccess, onError);
+window.resolveLocalFileSystemURL(pathFull, onSuccess, onError);
     
     
 }
