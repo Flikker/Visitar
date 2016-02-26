@@ -1489,9 +1489,9 @@ div.ui-mobile-viewport {
 	border-width: 5;
     /* background-color: rgba(26, 26, 102, 0.4); */
 	
-    position: absolute;
+
    overflow-x: hidden;
-    overflow: visible;
+    overflow-y: visible;
     
 	padding: 1em;
 }
