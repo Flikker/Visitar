@@ -1,3 +1,6 @@
+var hopeitwork;
+
+
 
 
 
@@ -62,8 +65,22 @@ function itDidnt() {
 }
 
 
+function getPathy() {
+    var wholepathy = 'cdvfile://localhost/persistent/';
+window.resolveLocalFileSystemURL(wholepathy, function(entry) {
+    hopeitwork = entry.toURL();
+    alert("this is in getpathy " + hopeitwork);
+     showDB(); alert("this comes after showdb")
+});
+}
+
 
 function querySuccess(tx, results) {
+    
+    
+    alert("testing for rest of path " + hopeitwork);
+
+    
      var len = results.rows.length;
  
 // set output, output2 to blank so values are not appended to previous values
@@ -78,7 +95,7 @@ function querySuccess(tx, results) {
 // onclick of the main <a tag first fires insomnia plugin on, then launches the pano. devicready handles switching off insomnia when pano closes. 
 // Nothing needs to be altered in the pano files themselves regarding insomnia plugin.
 // The pano ran very slowly when opened due to limitations of the webview(Android webview until 4.4.4 was fractured as it was different among different manufacturers - newest will use Chromium standard). Also VR didn't work as webgl not supported in webview. Solved using Crosswalk plugin which offers enhanced webview performance for Android down to version ??(check crosswalk docs and set as the minimum requirement for download), as well as webgl. If still running slowly, try changing hardware acceleration in manifest(some say to use true, some say false), or check target version of android in manifest (some found it was too low). There was also something else to add in that I didn't understand - google it
- document.getElementById("downloadlist2").innerHTML +='<li id="' +rowid+ '"> <a window.location=\'' +results.rows.item(i).data1+ '\'><img src="' +results.rows.item(i).data2+ '">' +results.rows.item(i).data3+ '<br>' +results.rows.item(i).data4+ '</a><a 1="' +results.rows.item(i).data5+  '" 2="'  +results.rows.item(i).data3+  '"  3="' +rowid+  '"    data-rel="popup" data-icon="delete" >Delete</a> </li>' ;  
+ document.getElementById("downloadlist2").innerHTML +='<li id="' +rowid+ '"> <a window.location=\'' + hopeitwork +results.rows.item(i).data1+ '\'><img src="' + hopeitwork +results.rows.item(i).data2+ '">' +results.rows.item(i).data3+ '<br>' +results.rows.item(i).data4+ '</a><a 1="' +results.rows.item(i).data5+  '" 2="'  +results.rows.item(i).data3+  '"  3="' +rowid+  '"    data-rel="popup" data-icon="delete" >Delete</a> </li>' ;  
      
 $('#downloadlist2').listview('refresh');
  }
@@ -113,17 +130,21 @@ function inSom() {
 // Show DB onload (next two functions)
 
 function showDB(tx) {
- var db = window.openDatabase("Database", "1.0", "DEMO", 2000000);
+    
+   var db = window.openDatabase("Database", "1.0", "DEMO", 2000000);
  db.transaction(createDB, errorCB, successCB);
 }
 function createDB(tx) {
- tx.executeSql("SELECT * FROM DEMO", [], querySuccess, errorCB);
+ tx.executeSql("SELECT * FROM DEMO", [], querySuccess, errorCB); 
 }
+
+
+
 
 // Delete a row in the DB from button
 
 function delRecord(rowid) {
-    
+    alert("this is delrecord and rowid is" + rowid);
  var db = window.openDatabase("Database", "1.0", "DEMO", 2000000);
  db.transaction(
  function (tx) {
@@ -166,7 +187,8 @@ function dropDatabase(tx) {
 
 
 // Show the DB contents on page load
-showDB(); 
+getPathy(); 
+
 
 
 
@@ -180,7 +202,7 @@ function delFolder(folderEntry, namey, listEntry) {
     
     
     function successy(parent) {
-   
+   alert("this is delfolder successy1 and parent " + parent); alert("this is delfolder successy2 and listentry " + listEntry);
      document.getElementById(listEntry).style.display = "none";
     delRecord(listEntry);
 }
@@ -192,15 +214,19 @@ function faily(error) {
     
     
     function onSuccess(fileEntry) {
+         alert("this is onSuccess and fileentry " + fileEntry);
        fileEntry.removeRecursively(successy, faily);
     }
     
     function onError(fileEntry) {
+        alert("this is onerror and fileentry " + fileEntry);
         document.getElementById(listEntry).style.display = "none";
         
     }
+    
+    var pathFull = hopeitwork + folderEntry;
 
-window.resolveLocalFileSystemURL(folderEntry, onSuccess, onError);
+window.resolveLocalFileSystemURL(pathFull, onSuccess, onError);
     
     
 }
@@ -214,13 +240,16 @@ window.resolveLocalFileSystemURL(folderEntry, onSuccess, onError);
 // of newLoccy(the location on the UNZIPPED folder), the name, and the id of that particular listview element (dynamically gave each
 // listview element a different id by passing the database unique identifier into the <li id=
 function getRid(x, y, z) {
-    if(confirm("Delete " + y + "?") == true) {
-        
-        
-        delFolder(x, y, z);
-        
+    function deleteThis(buttonIndex) {
+        if (buttonIndex === 1) {
+             delFolder(x, y, z);
+        }
+        else {
+        }
     }
-    else {
+    navigator.notification.confirm("Are you sure you want to delete " + y + "?", deleteThis, "Delete tour", "Delete it, Keep it");
+    
+   
+    
     }
-}
 

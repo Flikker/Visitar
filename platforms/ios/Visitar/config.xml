@@ -7,12 +7,26 @@
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
     <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="SuppressesLongPressGesture" value="false" />
+    <preference name="Suppresses3DTouchGesture" value="false" />
     <preference name="GapBetweenPages" value="0" />
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="HandleOpenUrl">
+        <param name="ios-package" value="CDVHandleOpenURL" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="IntentAndNavigationFilter">
+        <param name="ios-package" value="CDVIntentAndNavigationFilter" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="GestureHandler">
+        <param name="ios-package" value="CDVGestureHandler" />
+        <param name="onload" value="true" />
     </feature>
     <feature name="File">
         <param name="ios-package" value="CDVFile" />
@@ -28,15 +42,11 @@
     <feature name="Insomnia">
         <param name="ios-package" value="Insomnia" />
     </feature>
-    <feature name="Zip">
-        <param name="ios-package" value="ZipPlugin" />
-    </feature>
-    <description>
-        An app for viewing AR and VR tours.
-    </description>
-    <preference name="SplashScreenDelay" value="8000" />
     <feature name="Notification">
         <param name="ios-package" value="CDVNotification" />
+    </feature>
+    <feature name="Zip">
+        <param name="ios-package" value="ZipPlugin" />
     </feature>
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
@@ -69,6 +79,8 @@
     <preference name="AndroidPersistentFileLocation" value="Internal" />
     <preference name="iosPersistentFileLocation" value="Library" />
     <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="DisallowOverscroll" value="true" />
     <splash src="splash.png" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="6800" />

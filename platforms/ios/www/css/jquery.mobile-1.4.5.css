@@ -1348,6 +1348,7 @@ div.ui-mobile-viewport {
 	display: block;
 	overflow: visible;
 	overflow-x: hidden;
+    overflow-y: auto;
 }
 @media screen and (orientation: portrait) {
 	.ui-mobile .ui-page {
@@ -1487,8 +1488,12 @@ div.ui-mobile-viewport {
 .ui-content {
 	border-width: 5;
     /* background-color: rgba(26, 26, 102, 0.4); */
-	overflow: visible;
-	overflow-x: hidden;
+	
+    position: absolute;
+   overflow-x: hidden;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    
 	padding: 1em;
 }
 /* Corner styling for dialogs and popups */
@@ -4811,4 +4816,8 @@ width:100%; margin-left:auto; margin-right:auto; border-radius:20px; opacity: 0.
 
 .explan {
     white-space: normal;
+}
+
+body {
+    -webkit-overflow-scrolling: touch;    
 }
