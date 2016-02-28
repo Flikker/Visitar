@@ -61,7 +61,7 @@ function allDone(removey) {
             var newLocy = entry.toURL() + "a" + n;
             var removey = entry;
             var fileNamey = localurl + "a" + n;
-            alert("filenamey is " + fileNamey);
+            
             
             zip.unzip(entry.toURL(), newLocy, function(){
                                            statusDom.innerHTML = ""; removethezip(removey); allDone();
@@ -73,7 +73,7 @@ function allDone(removey) {
 // remove the file
 function removethezip(removey) {
              function success(removey) {
-  alert(entry.toURL + " has been removed");
+  
 
 
 }

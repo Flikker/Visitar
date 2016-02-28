@@ -55,13 +55,13 @@ function queryDB(tx) {
 }
 
 function itWorked() {
- alert("insomnia worked");   
+ 
 }
 
 
 
 function itDidnt() {
- alert("insomnia failed");   
+ 
 }
 
 
@@ -69,8 +69,8 @@ function getPathy() {
     var wholepathy = 'cdvfile://localhost/persistent/';
 window.resolveLocalFileSystemURL(wholepathy, function(entry) {
     hopeitwork = entry.toURL();
-    alert("this is in getpathy " + hopeitwork);
-     showDB(); alert("this comes after showdb")
+    
+     showDB(); 
 });
 }
 
@@ -78,7 +78,7 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
 function querySuccess(tx, results) {
     
     
-    alert("testing for rest of path " + hopeitwork);
+    
 
     
      var len = results.rows.length;
@@ -112,12 +112,12 @@ $('#downloadlist2').listview('refresh');
 
 
     function itsOff() {
- alert("insomnia off");   
+ 
 }
 
 
 function notOff() {
- alert("insomnia not off");   
+ 
 }
 
 
@@ -144,7 +144,7 @@ function createDB(tx) {
 // Delete a row in the DB from button
 
 function delRecord(rowid) {
-    alert("this is delrecord and rowid is" + rowid);
+    
  var db = window.openDatabase("Database", "1.0", "DEMO", 2000000);
  db.transaction(
  function (tx) {
@@ -202,7 +202,7 @@ function delFolder(folderEntry, namey, listEntry) {
     
     
     function successy(parent) {
-   alert("this is delfolder successy1 and parent " + parent); alert("this is delfolder successy2 and listentry " + listEntry);
+   
      document.getElementById(listEntry).style.display = "none";
     delRecord(listEntry);
 }
@@ -214,12 +214,12 @@ function faily(error) {
     
     
     function onSuccess(fileEntry) {
-         alert("this is onSuccess and fileentry " + fileEntry);
+         
        fileEntry.removeRecursively(successy, faily);
     }
     
     function onError(fileEntry) {
-        alert("this is onerror and fileentry " + fileEntry);
+       
         document.getElementById(listEntry).style.display = "none";
         
     }
