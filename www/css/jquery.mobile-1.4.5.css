@@ -4728,10 +4728,15 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 }
 
 
+ @media all and (max-width: 1480px){
+      .ui-page {
+      background: rgb(248,242,248);
 
+             }    
+       }
      
 
-.ui-page  and (min-width: 2048px) 
+.ui-page  and (min-width: 2047px) 
    
    and (orientation: landscape) {
      background: transparent url("../img/backybig.jpg");
@@ -4748,7 +4753,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 
  } 
 
-.ui-page  and (max-width: 1136px) 
+.ui-page  and (max-width: 2136px) 
    
    and (orientation: landscape) {
      background: transparent url("../img/backysmall.jpg");
@@ -4765,7 +4770,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 
  }  
 
-.ui-page  and (min-height: 2048px) 
+.ui-page  and (min-height: 2047px) 
    
    and (orientation: portrait) {
      background: transparent url("../img/backyportbig.jpg");
@@ -4783,7 +4788,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
  }  
 
 
-.ui-page  and (max-height: 1136px) 
+.ui-page  and (max-height: 2136px) 
    
    and (orientation: portrait) {
      background: transparent url("../img/backyportsmall.jpg");
