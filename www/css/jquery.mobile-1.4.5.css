@@ -4736,7 +4736,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
              }    
        }
 
-.ui-page  and (min-device-width : 2048px) 
+.ui-page  and (min-width : 2048px) 
    
    and (orientation : landscape) {
      background: transparent url("../img/backybig.jpg");
@@ -4753,7 +4753,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 
  } 
 
-.ui-page  and (max-device-width : 1136px) 
+.ui-page  and (max-width : 1136px) 
    
    and (orientation : landscape) {
      background: transparent url("../img/backysmall.jpg");
@@ -4770,7 +4770,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 
  }  
 
-.ui-page  and (min-device-height : 2048px) 
+.ui-page  and (min-height : 2048px) 
    
    and (orientation : portrait) {
      background: transparent url("../img/backyportbig.jpg");
@@ -4788,7 +4788,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
  }  
 
 
-.ui-page  and (max-device-height : 1136px) 
+.ui-page  and (max-height : 1136px) 
    
    and (orientation : portrait) {
      background: transparent url("../img/backyportsmall.jpg");
@@ -4850,7 +4850,7 @@ width:100%; margin-left:auto; margin-right:auto; border-radius:20px; opacity: 0.
 }
 
 #mainpicy {
-    width:80%; margin-left:10%; margin-right:10%; border-radius:10px 35px 10px 35px; border:2px solid black; opacity: 0.8;
+    width:80%; margin-left:10px; margin-right:10px; border-radius:10px 35px 10px 35px; border:2px solid black; opacity: 0.8;
 }
 
 .whitespacenorm {
@@ -4866,7 +4866,7 @@ width:100%; margin-left:auto; margin-right:auto; border-radius:20px; opacity: 0.
 }
 
 .picandtext {
-    text-align: center; background-color: rgba(51, 51, 51, 0.5); border-radius: 20px; border:2px solid black; padding:7px; margin: 5px 5px 20px 5px; clear: both;
+    text-align: center; background-color: rgba(51, 51, 51, 0.5); border-radius: 20px; border:2px solid black; padding:7px; margin: 8px 8px 20px 8px; clear: both;
 }
 
 .explan {
