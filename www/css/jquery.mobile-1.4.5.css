@@ -4735,6 +4735,9 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
              }    
        }
      
+@media all and (max-width: 2136px) 
+   
+   and (orientation: landscape) {
 .ui-page {
      background: transparent url("../img/backybig.jpg");
       -webkit-background-size: cover;          
@@ -4750,7 +4753,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 
  } 
 
-
+}
 
 
 
