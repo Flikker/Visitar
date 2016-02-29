@@ -4736,8 +4736,27 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
              }    
        }
 
-.ui-page {
-     background: transparent url("../img/backymed.jpg");
+.ui-page  and (min-device-width : 2048px) 
+   
+   and (orientation : landscape) {
+     background: transparent url("../img/backybig.jpg");
+      -webkit-background-size: cover;          
+      -moz-background-size: cover;         
+       -o-background-size: cover;          
+       background-size: cover;
+         background-position:center; 
+        background-repeat: no-repeat;
+        width: 100%; 
+        height: 100%; 
+        position: fixed; 
+        z-index: 0; 
+
+ } 
+
+.ui-page  and (max-device-width : 1136px) 
+   
+   and (orientation : landscape) {
+     background: transparent url("../img/backysmall.jpg");
       -webkit-background-size: cover;          
       -moz-background-size: cover;         
        -o-background-size: cover;          
@@ -4750,6 +4769,42 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
         z-index: 0; 
 
  }  
+
+.ui-page  and (min-device-height : 2048px) 
+   
+   and (orientation : portrait) {
+     background: transparent url("../img/backyportbig.jpg");
+      -webkit-background-size: cover;          
+      -moz-background-size: cover;         
+       -o-background-size: cover;          
+       background-size: cover;
+         background-position:center; 
+        background-repeat: no-repeat;
+        width: 100%; 
+        height: 100%; 
+        position: fixed; 
+        z-index: 0; 
+
+ }  
+
+
+.ui-page  and (max-device-height : 1136px) 
+   
+   and (orientation : portrait) {
+     background: transparent url("../img/backyportsmall.jpg");
+      -webkit-background-size: cover;          
+      -moz-background-size: cover;         
+       -o-background-size: cover;          
+       background-size: cover;
+         background-position:center; 
+        background-repeat: no-repeat;
+        width: 100%; 
+        height: 100%; 
+        position: fixed; 
+        z-index: 0; 
+
+ }  
+
 
 
 
@@ -4811,7 +4866,7 @@ width:100%; margin-left:auto; margin-right:auto; border-radius:20px; opacity: 0.
 }
 
 .picandtext {
-    text-align: center; background-color: rgba(51, 51, 51, 0.5); border-radius: 20px; border:2px solid black; padding:7px; margin: 30px 30px 20px 30px; clear: both;
+    text-align: center; background-color: rgba(51, 51, 51, 0.5); border-radius: 20px; border:2px solid black; padding:7px; margin: 10px 10px 20px 10px; clear: both;
 }
 
 .explan {
