@@ -4731,7 +4731,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 
      
 
-@media all  and (max-width: 2047px) 
+@media (max-device-width: 2047px) 
    
    {
      background: transparent url("../img/backybig.jpg");
