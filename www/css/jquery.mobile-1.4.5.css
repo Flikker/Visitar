@@ -4821,3 +4821,7 @@ width:100%; margin-left:auto; margin-right:auto; border-radius:20px; opacity: 0.
 body {
     -webkit-overflow-scrolling: touch;    
 }
+
+::-webkit-scrollbar { 
+    display: none; 
+}
