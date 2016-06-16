@@ -91,5 +91,5 @@
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-zip" />
      <plugin name="cordova-plugin-dialogs" />
-    <plugin spec="https://github.com/petermetz/cordova-plugin-ibeacon.git" />
+   
 </widget>
