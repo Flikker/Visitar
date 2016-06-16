@@ -69,7 +69,7 @@ delegate.didRangeBeaconsInRegion = function (pluginResult) {
 
     // Display distance for the closest beacon.
     var beaconclose = pluginResult.beacons[0];
-    document.getElementById("beaconalertrange").innerHTML = 'Closest beacon is ' + beaconclose.accuracy + 'm away and its major value is ' + beaconclose.major;
+    document.getElementById("beactesting").innerHTML = 'Closest beacon is ' + beaconclose.accuracy + 'm away and its major value is ' + beaconclose.major;
        
   pleaseletit = beaconclose.major;
         
