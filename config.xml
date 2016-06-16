@@ -84,11 +84,7 @@
     
     
     
-    <plugin name="cordova-plugin-file-transfer" />
-    <plugin name="cordova-plugin-whitelist" />
-    <plugin name="nl.x-services.plugins.insomnia" />
-    <plugin name="cordova-plugin-file" />
-    <plugin name="cordova-plugin-splashscreen" />
+    
     <plugin name="cordova-plugin-zip" />
      <plugin name="cordova-plugin-dialogs" />
    
