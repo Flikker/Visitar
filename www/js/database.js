@@ -80,8 +80,9 @@ function querySuccess(tx, results) {
     window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "www/index.html", gotFile, fail);
     
     function gotFile(fileEntry) {
-
+            alert("fileentry is: "+fileEntry);
     fileEntry.file(function(file) {
+        alert("File is: "+file);
         var reader = new FileReader();
 
         reader.onloadend = function(e) {
