@@ -83,10 +83,11 @@ function querySuccess(tx, results) {
     
     function gotFile(fileEntry) {
             alert("fileentry is: "+fileEntry);
-        cordRoot = fileEntry;
-        return cordRoot;
+        
     fileEntry.file(function(file) {
         alert("File is: "+file);
+        cordRoot = file;
+        return cordRoot;
         var reader = new FileReader();
 
         reader.onloadend = function(e) {
