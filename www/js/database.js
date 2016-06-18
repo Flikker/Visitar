@@ -78,8 +78,7 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
 function querySuccess(tx, results) {
     
     
-    
-var cordRoot = cordova.file.applicationDirectory;
+    var cordRoot = window.resolveLocalFileSystemURL(cordova.file.applicationDirectory);
     
      var len = results.rows.length;
  
