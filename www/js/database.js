@@ -77,11 +77,23 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
 
 function querySuccess(tx, results) {
     
-    window.resolveLocalFileSystemURL(cordova.file.applicationDirectory+'cordova.js',success,fail);
-function success(fileEntry){
-alert(fileEntry);
-   document.getElementById("mainpicy").src = fileEntry;
+    window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "www/index.html", gotFile, fail);
+    
+    function gotFile(fileEntry) {
+
+    fileEntry.file(function(file) {
+        var reader = new FileReader();
+
+        reader.onloadend = function(e) {
+            alert("Text is: "+this.result);
+            
+        }
+
+        reader.readAsText(file);
+    });
+
 }
+
 function fail(error){
 alert("error");
 }
