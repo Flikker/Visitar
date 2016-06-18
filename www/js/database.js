@@ -77,7 +77,7 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
 
 function querySuccess(tx, results) {
     
-    window.resolveLocalFileSystemURL(cordova.file.applicationDirectory+'ww/img/Vtitle.png',success,fail);
+    window.resolveLocalFileSystemURL(cordova.file.applicationDirectory,success,fail);
 function success(fileEntry){
 alert(fileEntry);
    document.getElementById("mainpicy").src = fileEntry;
