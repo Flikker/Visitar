@@ -108,7 +108,9 @@ $('#downloadlist2').listview('refresh');
 
 }
 
-
+function hitBackspace () {
+    $('#downloadlist2').listview('refresh');
+}
 
 
 

@@ -34,13 +34,13 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready'); getPathy();
-        startScanning();
+        
         
         
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        inSom();  
+        inSom(); hitBackspace(); 
         
     }
 };
