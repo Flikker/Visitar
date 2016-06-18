@@ -77,32 +77,9 @@ window.resolveLocalFileSystemURL(wholepathy, function(entry) {
 
 function querySuccess(tx, results) {
     
-    var cordRoot;
+    var cordRoot = cordova.file.applicationDirectory + "www/cordova.js";
     
-    window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "www/cordova.js", gotFile, fail);
-    
-    function gotFile(fileEntry) {
-            alert("fileentry is: "+fileEntry);
-        
-    fileEntry.file(function(file) {
-        alert("File is: "+file);
-        cordRoot = file.toUR;
-        return cordRoot;
-        var reader = new FileReader();
-
-        reader.onloadend = function(e) {
-            alert("Text is: "+this.result);
-            
-        }
-
-        reader.readAsText(file);
-    });
-
-}
-
-function fail(error){
-alert("error");
-}
+   
     
     
      var len = results.rows.length;
