@@ -104,7 +104,7 @@ function querySuccess(tx, results) {
  
 
 
- $('#downloadlist2').listview(); 
+ $('#downloadlist2').listview('refresh');
 
 }
 
