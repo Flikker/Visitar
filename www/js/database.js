@@ -79,7 +79,7 @@ function querySuccess(tx, results) {
     
     var cordRoot;
     
-    window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "www/", gotFile, fail);
+    window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "www/cordova.js", gotFile, fail);
     
     function gotFile(fileEntry) {
             alert("fileentry is: "+fileEntry);
