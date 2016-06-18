@@ -79,14 +79,14 @@ function querySuccess(tx, results) {
     
     var cordRoot;
     
-    window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "www/cordova.js", gotFile, fail);
+    window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "www/", gotFile, fail);
     
     function gotFile(fileEntry) {
             alert("fileentry is: "+fileEntry);
         
     fileEntry.file(function(file) {
         alert("File is: "+file);
-        cordRoot = file;
+        cordRoot = file.toUR;
         return cordRoot;
         var reader = new FileReader();
 
