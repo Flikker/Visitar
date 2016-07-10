@@ -34,27 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready'); getPathy();
-       function initializeSuccess(result) {
-                    alert("initializesuccess");
-                    if (result.status === "enabled") {
-                        alert("Bluetooth is enabled: " + result); 
-                        var krpano = document.getElementById("krpanoSWFObject");
-                        krpano.call("getthebeacchecker()");
-                    }
-                    else {
-                        document.getElementById("start-scan").disabled = true;
-                        alert("Bluetooth is not enabled:", "status " + result);
-                        }
-                }
-            
-                function handleError() {
-                    alert("Device does not have btle capability")
-                }
-            
-                new Promise(function (resolve, reject) {
-                        bluetoothle.initialize(resolve, reject,
-                            { request: true, statusReceiver: true });
-                        }).then(initializeSuccess, handleError);
+        cordova.plugins.BluetoothStatus.initPlugin();
         
         
         
