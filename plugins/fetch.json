@@ -71,11 +71,10 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.unarin.cordova.beacon": {
+    "cordova-plugin-bluetoothle": {
         "source": {
-            "type": "git",
-            "url": "https://github.com/petermetz/cordova-plugin-ibeacon.git",
-            "subdir": "."
+            "type": "registry",
+            "id": "cordova-plugin-bluetoothle"
         },
         "is_top_level": true,
         "variables": {}
