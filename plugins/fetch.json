@@ -78,5 +78,13 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-bluetooth-status": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-bluetooth-status"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }
