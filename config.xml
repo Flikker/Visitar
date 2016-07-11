@@ -93,5 +93,5 @@
      <plugin name="cordova-plugin-dialogs" />
     <plugin name="cordova-plugin-bluetoothle"/>
     <plugin name="org.crosswalk.engine" source="pgb" />
-    
+     <plugin name="cordova-plugin-ibeacon"/>
 </widget>
