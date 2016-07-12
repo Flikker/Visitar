@@ -34,7 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready'); getPathy(); document.addEventListener("visibilitychange", function() {
-        document.getElementById("pageone").reload();
+        document.getElementById("pageone").reload(); getPathy();
     });
        
         
