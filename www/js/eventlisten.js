@@ -61,4 +61,4 @@ document.addEventListener('click', function(event) {
 }, false);
    
 
-document.addEventListener("backbutton", hitBackspace(), false);
+document.addEventListener("backbutton", hitBackspace, false);
