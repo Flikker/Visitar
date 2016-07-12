@@ -109,7 +109,7 @@ $('#downloadlist2').listview('refresh');
 }
 
 function hitBackspace () {
-    history.back(); location.reload();
+    window.history.back(); location.reload();
 }
 
 
