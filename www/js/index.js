@@ -33,7 +33,9 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready'); getPathy(); 
+        app.receivedEvent('deviceready'); getPathy(); document.addEventListener("visibilitychange", function() {
+        location.reload();
+    });
        
         
         
