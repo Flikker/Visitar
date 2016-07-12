@@ -108,11 +108,6 @@ $('#downloadlist2').listview('refresh');
 
 }
 
-function hitBackspace () {
-  alert("hitbackspace called"); window.close();  location.reload(); 
-}
-
-
 
     function itsOff() {
  
