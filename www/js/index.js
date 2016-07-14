@@ -35,7 +35,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready'); getPathy(); document.addEventListener("visibilitychange", function() {
        location.reload(); 
-    });
+    }); var VolumeControl = cordova.plugins.brightness; 
        
         
         
