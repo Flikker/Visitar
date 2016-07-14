@@ -96,4 +96,5 @@
      <plugin name="cordova-plugin-ibeacon"/>
     <plugin name="cordova-plugin-vibration"/>
     <plugin name="cordova-plugin-brightness"/>
+     <plugin name="cordova-plugin-powermanagement-orig"/>
 </widget>
