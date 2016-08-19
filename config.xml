@@ -85,7 +85,7 @@
     <preference name="SplashScreenDelay" value="6800" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     
-
+  
     
     
     
@@ -97,10 +97,10 @@
     <plugin name="cordova-plugin-zip" />
      <plugin name="cordova-plugin-dialogs" />
     <plugin name="cordova-plugin-bluetoothle" version="2.4.0"/>
-
+    <plugin name="org.crosswalk.engine" source="pgb" />
      <plugin name="cordova-plugin-ibeacon"/>
     <plugin name="cordova-plugin-vibration"/>
     <plugin name="cordova-plugin-brightness"/> 
-    <plugin name="cordova-plugin-crosswalk-webview" source="npm"/>
+    
      <plugin name="https://github.com/guyromb/Cordova-open-native-settings.git"/>
 </widget>
