@@ -3,8 +3,8 @@
 $(document).on('pagebeforeshow', '#searchpage', function(){
     $('#listsearch').empty();
     var output = $('#listsearch');
-    $.ajax({
-        url: 'http://revolutioninteractivevideo.com/wp-content/uploads/panos/augmentedrealityheritage/www/searchy.php',
+    $.ajax({ 
+        url: 'http://revolutioninteractivevideo.com/wp-content/uploads/panos/augmentedrealityheritage/www/searchysandbox.php',
         dataType: 'jsonp',
         jsonp: 'jsoncallback',
         timeout: 20000,
