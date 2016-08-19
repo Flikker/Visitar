@@ -8,7 +8,7 @@
         Revolution Interactive Video
     </author>
     <content src="index.html" />
-    <icon src="www/img/logo.png" />
+    <icon src="logo.png" />
     <plugin name="cordova-plugin-whitelist" version="1" />
     <access origin="http://revolutioninteractivevideo.com/*" />
     <allow-intent href="http://*/*" />
@@ -30,7 +30,7 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="19" />
     <preference name="android-targetSdkVersion" value="19" />
-     <preference name="phonegap-version" value="cli-5.2.0" />
+     
    
     
     
