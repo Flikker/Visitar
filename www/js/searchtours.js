@@ -36,7 +36,7 @@ $(document).on('pagebeforeshow', '#detailsPage', function(event) {
     $('#tourdetails').empty();
     var output = $('#tourdetails');
     $.ajax({
-        url: 'http://revolutioninteractivevideo.com/wp-content/uploads/panos/augmentedrealityheritage/www/display.php?id='+id,
+        url: 'http://revolutioninteractivevideo.com/wp-content/uploads/panos/augmentedrealityheritage/www/displaysandbox.php?id='+id,
         dataType: 'jsonp',
         jsonp: 'jsoncallback',
         timeout: 10000,
