@@ -9,7 +9,7 @@
     </author>
     <content src="index.html" />
     <icon src="logo.png" />
-    <icon src="logo.png" platform="ios" width="180" height="180" />
+    
     <plugin name="cordova-plugin-whitelist" version="1" />
     <access origin="http://revolutioninteractivevideo.com/*" />
     <allow-intent href="http://*/*" />
@@ -33,7 +33,12 @@
     <preference name="android-targetSdkVersion" value="19" />
      
    
-    
+    <platform name = "ios">
+        <icon src="icons/ios/Icon-Small@2x.png" width="57" height="57" />
+        <icon src="icons/ios/Icon-72.png" width="72" height="72" />
+        <icon src="icons/ios/Icon@2x.png" width="114" height="114" />
+        <icon src="icons/ios/Icon-72@2x.png" width="144" height="144" />
+    </platform>
     
      
 
