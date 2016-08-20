@@ -4,7 +4,7 @@ $(document).on('pagebeforeshow', '#searchpage', function(){
     $('#listsearch').empty();
     var output = $('#listsearch');
     $.ajax({ 
-        url: 'http://revolutioninteractivevideo.com/wp-content/uploads/panos/augmentedrealityheritage/www/searchysandbox.php',
+        url: 'http://revolutioninteractivevideo.com/wp-content/uploads/panos/augmentedrealityheritage/www/searchy.php',
         dataType: 'jsonp',
         jsonp: 'jsoncallback',
         timeout: 20000,
@@ -36,7 +36,7 @@ $(document).on('pagebeforeshow', '#detailsPage', function(event) {
     $('#tourdetails').empty();
     var output = $('#tourdetails');
     $.ajax({
-        url: 'http://revolutioninteractivevideo.com/wp-content/uploads/panos/augmentedrealityheritage/www/displaysandbox.php?id='+id,
+        url: 'http://revolutioninteractivevideo.com/wp-content/uploads/panos/augmentedrealityheritage/www/display.php?id='+id,
         dataType: 'jsonp',
         jsonp: 'jsoncallback',
         timeout: 10000,
