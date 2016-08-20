@@ -105,6 +105,6 @@
     <plugin name="cordova-plugin-vibration"/>
     <plugin name="cordova-plugin-brightness"/>
     <plugin name="cordova-plugin-crosswalk-webview"/> 
-    <plugin name="cordova-plugin-powermanagement-orig"/> 
+    <plugin name="https://github.com/Viras-/cordova-plugin-powermanagement.git"/> 
      <plugin name="https://github.com/guyromb/Cordova-open-native-settings.git"/>
 </widget>
