@@ -62,5 +62,55 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-vibration": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-vibration"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-bluetoothle": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-bluetoothle"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.unarin.cordova.beacon": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-ibeacon"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-brightness": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-brightness"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.phonegap.plugins.nativesettingsopener": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guyromb/Cordova-open-native-settings.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "at.gofg.sportscomputer.powermanagement": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Viras-/cordova-plugin-powermanagement.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

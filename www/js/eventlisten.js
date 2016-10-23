@@ -1,6 +1,5 @@
 function openPanos(dothis) {
-    window.plugins.insomnia.keepAwake();
-    alert(dothis);
+        
       var myWindow = window.open(dothis);
 }
 
@@ -61,4 +60,6 @@ document.addEventListener('click', function(event) {
     }
 }, false);
    
+ 
 
+       

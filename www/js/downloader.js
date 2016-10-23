@@ -44,7 +44,7 @@ fileTransfer.onprogress = function(progressEvent) {
 function allDone(removey) {
     
         document.getElementById("ft-prog").style.display = "none"; window.plugins.insomnia.allowSleepAgain(); 
-        navigator.notification.alert(itemname + " has downloaded. Go to the Home page to see your downloaded tours", showDB(), 'Download successful', 'Okay'); 
+        navigator.notification.alert(itemname + " has downloaded. Go to the Home page to see your downloaded tours", showDB(), 'Download successful', 'Okay'); showDB(); getPathy();
 }
      
      
@@ -61,7 +61,7 @@ function allDone(removey) {
             var newLocy = entry.toURL() + "a" + n;
             var removey = entry;
             var fileNamey = localurl + "a" + n;
-            alert("filenamey is " + fileNamey);
+            
             
             zip.unzip(entry.toURL(), newLocy, function(){
                                            statusDom.innerHTML = ""; removethezip(removey); allDone();
@@ -73,10 +73,8 @@ function allDone(removey) {
 // remove the file
 function removethezip(removey) {
              function success(removey) {
-  alert(entry.toURL + " has been removed");
+  
 
-                alert("entryfullpath " + entry.fullPath);
-                 alert("newlocyfullpath " + newLocy.fullPath);
 
 }
 

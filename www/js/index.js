@@ -33,11 +33,20 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready'); showDB;
+        app.receivedEvent('deviceready'); getPathy(); document.addEventListener("visibilitychange", function() {
+       if (window.location.href == cordova.file.applicationDirectory + "www/index.html") {
+           location.reload();
+       }  
+    }); var VolumeControl = cordova.plugins.brightness; 
+       
+        
+        
+        
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        inSom();
+        inSom(); 
+        
     }
 };
 
